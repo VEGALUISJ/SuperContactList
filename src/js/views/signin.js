@@ -41,9 +41,11 @@ export class SignIn extends Component {
 							placeholder="Confirm Password"
 						/>
 					</div>
-					<button type="button" className="btn btn-success mx-auto mb-4">
-						Create user
-					</button>
+					<Link to="/login">
+						<button type="button" className="btn btn-success mx-auto mb-4">
+							Create user
+						</button>
+					</Link>
 				</div>
 			</div>
 		);

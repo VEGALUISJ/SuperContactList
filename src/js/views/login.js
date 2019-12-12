@@ -17,9 +17,11 @@ export class LogIn extends Component {
 							<div className="form-group">
 								<input type="password" className="form-control" placeholder="Password" />
 							</div>
-							<button type="button" className="btn btn-outline-primary">
-								Login
-							</button>
+							<Link to="/demo">
+								<button type="button" className="btn btn-outline-primary">
+									Login
+								</button>
+							</Link>
 						</form>
 					</div>
 				</div>
