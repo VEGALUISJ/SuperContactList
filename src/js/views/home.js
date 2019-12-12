@@ -9,6 +9,6 @@ export const Home = () => (
 			<img src={contactImage} />
 		</p>
 		<h2>Its no time to lose contacts</h2>
-		<h2>keep safe with us.</h2>
+		<h2>keep it safe with us.</h2>
 	</div>
 );

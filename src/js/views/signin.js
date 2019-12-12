@@ -42,7 +42,7 @@ export class SignIn extends Component {
 						/>
 					</div>
 					<Link to="/login">
-						<button type="button" className="btn btn-success mx-auto mb-4">
+						<button type="button" className="btn btn-outline-primary mx-auto mb-4">
 							Create user
 						</button>
 					</Link>
