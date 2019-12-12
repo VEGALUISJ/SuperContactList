@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
-class LogIn extends Component {
+export class LogIn extends Component {
 	render() {
 		return (
 			<div className="contanier-fluid containerlogin">
@@ -11,13 +11,11 @@ class LogIn extends Component {
 
 						<form action="">
 							<div className="form-group">
-								<label htmlFor="">Username</label>
-								<input type="text" className="form-control" />
+								<input type="text" className="form-control" placeholder="Username" />
 							</div>
 
 							<div className="form-group">
-								<label htmlFor="">Password</label>
-								<input type="password" className="form-control" />
+								<input type="password" className="form-control" placeholder="Password" />
 							</div>
 							<button type="button" className="btn btn-outline-primary">
 								Login
