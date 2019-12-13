@@ -7,7 +7,7 @@ export class Demo extends Component {
 		return (
 			<div className="container">
 				<p className="text-right my-3">
-					<Link className="btn btn-success" to="/demo">
+					<Link className="btn btn-success" to="/addcontact">
 						Add new contact
 					</Link>
 				</p>
