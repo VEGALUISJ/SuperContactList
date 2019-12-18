@@ -37,11 +37,9 @@ li {
 }
 .detailsfooter{
   width: 100%;
-  padding: 12px 20px;
   box-sizing: border-box;
   margin: 0px;
-  border-top: 1px solid #adadad;
-  color: darkgray;
+  color: black;
 }
 li > .times{
     float: right;
@@ -51,5 +49,12 @@ li > .times{
 }
 li:hover > .times {
  visibility:visible;
+}
+
+.detailslist {
+    background-color: whitesmoke;
+    width: 475px;
+    height: auto;
+    box-shadow: 5px 10px 15px #888888, 5px 10px 35px black;
 }
 

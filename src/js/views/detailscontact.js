@@ -43,7 +43,7 @@ export class DetailsContact extends Component {
 								luisvega.jlvv@gmail.com
 							</h3>
 						</div>
-						<div className="col-md-6 mb-1">
+						<div className="col-md-6 mb-1 detailslist">
 							<h3 className="text-center">To Do List</h3>
 							<input
 								className="inputtodolist"
@@ -55,10 +55,11 @@ export class DetailsContact extends Component {
 							<ul className="text-center">
 								<li>One thing to do</li>
 							</ul>
+							<div className="detailsfooter">items</div>
 						</div>
 					</div>
 					<Link to="/demo">
-						<p className="mt-3">Or get back to contacts</p>
+						<p className="col-md-2 mt-3">Or get back to contacts</p>
 					</Link>
 				</div>
 			</div>
