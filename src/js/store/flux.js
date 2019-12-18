@@ -7,13 +7,12 @@ const getState = ({ getStore, getActions, setStore }) => {
 
 		actions: {
 			// Use getActions to call a function within a fuction
-			handleChange: e =>
-				setStore({
-					list: {
-						...setStore.list,
-						[e.target.name]: e.target.value
-					}
-				})
+			addTodo: todo => {
+				const store = getStore();
+				store.todolist.push(todo);
+				setStore({ todo: todo });
+				console.log("im working", todo);
+			}
 		}
 	};
 };

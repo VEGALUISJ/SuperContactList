@@ -6,7 +6,6 @@ export class DetailsContact extends Component {
 	constructor() {
 		super();
 		this.state = {
-			list: "",
 			todo: ""
 		};
 	}
@@ -62,16 +61,22 @@ export class DetailsContact extends Component {
 												className="inputtodolist col-md-9 mr-1"
 												placeholder="What needs to be done with this Contact?"
 												onChange={e => this.setState({ todo: e.target.value })}
-												//onKeyDown={e => this.keyPress(e)}
 											/>
-											<button type="button" className="btn btn-primary col-md-2">
+											<button
+												type="button"
+												className="btn btn-primary col-md-2"
+												onClick={() => actions.addTodo(this.state.todo)}>
 												Add to do
 											</button>
 										</div>
 										<ul className="text-center">
 											{store.todolist.map((todolist, inx) => (
-												<li key={inx} value={todolist}>
+												<li key={inx}>
 													{todolist}
+													<span
+														className="times fa fa-times"
+														//onClick={e => this.handleClick(e, ind)}
+													/>
 												</li>
 											))}
 										</ul>
