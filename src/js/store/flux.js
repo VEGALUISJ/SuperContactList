@@ -1,6 +1,8 @@
 const getState = ({ getStore, getActions, setStore }) => {
 	return {
-		store: {},
+		store: {
+			todolist: ["Do Homework Project", "Asist Every Day To Class"]
+		},
 
 		actions: {
 			// Use getActions to call a function within a fuction
