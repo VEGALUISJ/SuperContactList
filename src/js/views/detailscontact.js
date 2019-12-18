@@ -6,7 +6,8 @@ export class DetailsContact extends Component {
 	constructor() {
 		super();
 		this.state = {
-			list: ""
+			list: "",
+			todo: ""
 		};
 	}
 
@@ -56,13 +57,17 @@ export class DetailsContact extends Component {
 									</div>
 									<div className="col-md-6 mb-1 detailslist">
 										<h3 className="text-center">To Do List</h3>
-										<input
-											className="inputtodolist"
-											//value={this.state.text}
-											placeholder="What needs to be done?"
-											//onChange={e => this.setState({ text: e.target.value })}
-											//onKeyDown={e => this.keyPress(e)}
-										/>
+										<div className="row justify-content-md-center">
+											<input
+												className="inputtodolist col-md-9 mr-1"
+												placeholder="What needs to be done with this Contact?"
+												onChange={e => this.setState({ todo: e.target.value })}
+												//onKeyDown={e => this.keyPress(e)}
+											/>
+											<button type="button" className="btn btn-primary col-md-2">
+												Add to do
+											</button>
+										</div>
 										<ul className="text-center">
 											{store.todolist.map((todolist, inx) => (
 												<li key={inx} value={todolist}>
