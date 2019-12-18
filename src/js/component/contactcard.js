@@ -29,12 +29,19 @@ export class ContactCard extends Component {
 				</div>
 				<div className="contact-box-footer mx-auto">
 					<div className="m-t-xs btn-group ">
-						<a className="btn btn-xs btn-white">
-							<i className="fa fa-pencil-alt" /> Edit
-						</a>
+						<Link to="/editcontact">
+							<a className="btn btn-xs btn-white">
+								<i className="fa fa-pencil-alt" /> Edit
+							</a>
+						</Link>
 						<a className="btn btn-xs btn-white">
 							<i className="fa fa-trash" /> Delete
 						</a>
+						<Link to="/detailscontact">
+							<a className="btn btn-xs btn-white">
+								<i className="fa fa-info-circle" /> Details
+							</a>
+						</Link>
 					</div>
 				</div>
 			</div>

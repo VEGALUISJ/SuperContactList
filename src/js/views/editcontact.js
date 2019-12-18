@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
-export class AddContact extends Component {
+export class EditContact extends Component {
 	render() {
 		return (
 			<div>
 				<div className="container">
-					<h1 className="text-center mt-4">Add a New Contact</h1>
+					<h1 className="text-center mt-4">Edit Contact</h1>
 					<div className="form-group">
 						<label>Full Name</label>
 						<input type="Name" className="form-control" id="InputFullname" placeholder="Enter Full Name" />
@@ -30,7 +30,7 @@ export class AddContact extends Component {
 					</div>
 					<Link to="/demo">
 						<button type="button" className="btn btn-primary form-control mt-3">
-							Save New Contact Now
+							Save Contact Now
 						</button>
 					</Link>
 					<Link to="/demo">

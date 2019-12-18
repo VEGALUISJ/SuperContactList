@@ -5,3 +5,51 @@
 .containerlogin {
     margin-top: 150px;
 }
+
+.detailspage{
+    margin-top: 100px;
+}
+
+.inputtodolist{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 0px;
+    box-sizing: border-box;
+    border: 0;
+    outline: 0;
+    border-bottom: 2px solid #adadad;
+}
+
+ul {
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 18px;
+  margin: 0px;
+  list-style:none;
+  padding: 0px;
+}
+li {
+    width: 100%;
+    border-bottom: 1px solid #adadad;
+    text-indent: 20px;
+    padding-top: 10px;
+    padding-bottom: 5px;;
+}
+.detailsfooter{
+  width: 100%;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  margin: 0px;
+  border-top: 1px solid #adadad;
+  color: darkgray;
+}
+li > .times{
+    float: right;
+    padding-right: 15px;
+    visibility:hidden;
+    cursor: pointer;
+}
+li:hover > .times {
+ visibility:visible;
+}
+

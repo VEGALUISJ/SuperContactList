@@ -7,6 +7,8 @@ import { LogIn } from "./views/login";
 import { SignIn } from "./views/signin";
 import { Demo } from "./views/demo";
 import { AddContact } from "./views/addcontact";
+import { EditContact } from "./views/editcontact";
+import { DetailsContact } from "./views/detailscontact";
 import injectContext from "./store/appContext";
 
 import { Navbar } from "./component/navbar";
@@ -29,6 +31,8 @@ export const Layout = () => {
 						<Route exact path="/signin" component={SignIn} />
 						<Route exact path="/demo" component={Demo} />
 						<Route exact path="/addcontact" component={AddContact} />
+						<Route exact path="/editcontact" component={EditContact} />
+						<Route exact path="/detailscontact" component={DetailsContact} />
 						<Route render={() => <h1>Not found!</h1>} />
 					</Switch>
 					<Footer />
